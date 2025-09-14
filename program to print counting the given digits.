@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int n,count_digits=0;
+    scanf("%d",&n);
+    while(n!=0)
+    {
+        int d=n%10;
+        n=n/10;
+        count_digits++;
+    }
+    printf("%d",count_digits);
+    return 0;
+}
